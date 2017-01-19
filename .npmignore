@@ -1,4 +1,5 @@
 *.ts
+*.iml
 !*.d.ts
 .editorconfig
 .gitattributes
