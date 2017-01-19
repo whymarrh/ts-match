@@ -81,6 +81,19 @@ test(`Matching types with multiple match cases matches the value correctly and r
     t.equal(5, result);
 });
 
+test(`Matching types to types with multiple match cases matches correctly and returns the result of the match`, (t) => {
+    t.plan(1);
+
+    const s: Foo = new C(5, `test string`);
+    const result = match<Foo, Foo>(s,
+        _(new B(3, `foo`)),
+        when(A, s => new A(s.a, s.name)),
+        when(B, s => new B(s.b, s.name)),
+        when(C, s => new C(s.c, `Success`)),
+    );
+    t.deepEqual(result.name, `Success`);
+});
+
 test(`Matching types with multiple match cases matches the value correctly and returns nothing`, (t) => {
     t.plan(1);
 

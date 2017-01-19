@@ -26,6 +26,7 @@ function Case<R>(value: any, fn: Function<any, R>): ICase<any, R> {
 
 function DefaultCase(): IDefaultCase<void>;
 function DefaultCase(value: number): IDefaultCase<number>;
+function DefaultCase<R>(value: R): IDefaultCase<R>;
 function DefaultCase<R>(value?: R): IDefaultCase<R | void> {
     return {
         value
