@@ -100,7 +100,7 @@ test(`Matching types with multiple match cases matches the value correctly and r
     const s: Foo = new B(42, `test string`);
     match<Foo, void>(s,
         _(),
-        when(B, _ => t.pass()),
+        when(B, _ => t.pass(`Pass`)),
         when(A, _ => {}),
         when(C, _ => {}),
     );
