@@ -61,9 +61,9 @@ test(`Matching strings with a single failing match uses the result of a default 
     t.equal(-42, result);
 });
 
-class A { constructor(public readonly a: number, public readonly name: string) { /* ??? */ } }
-class B { constructor(public readonly b: number, public readonly name: string) { /* ??? */ } }
-class C { constructor(public readonly c: number, public readonly name: string) { /* ??? */ } }
+class A { constructor(public readonly a: number, public readonly name: string) { /* empty */ } }
+class B { constructor(public readonly b: number, public readonly name: string) { /* empty */ } }
+class C { constructor(public readonly c: number, public readonly name: string) { /* empty */ } }
 type Foo = A | B | C
 
 test(`Matching types with a single failing match returns the default case value`, (t) => {
