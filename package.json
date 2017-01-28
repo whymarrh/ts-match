@@ -20,7 +20,7 @@
   "homepage": "https://github.com/whymarrh/ts-match#readme",
   "devDependencies": {
     "@types/tape": "^4.2.28",
-    "tap-list": "^1.0.0",
+    "tap-list": "^1.0.1",
     "tape": "^4.6.3",
     "typescript": "^2.1.4"
   }
