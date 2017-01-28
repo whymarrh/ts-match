@@ -8,7 +8,7 @@ interface ICase<T, R> {
 }
 
 interface IDefaultCase<R> {
-    value: R,
+    fn: () => R,
 }
 
 function Case<R>(value: string, fn: Function<string, R>): ICase<string, R>;
@@ -24,12 +24,23 @@ function Case<R>(value: any, fn: Function<any, R>): ICase<any, R> {
     };
 }
 
-function DefaultCase(): IDefaultCase<void>;
-function DefaultCase(value: number): IDefaultCase<number>;
-function DefaultCase<R>(value: R): IDefaultCase<R>;
-function DefaultCase<R>(value?: R): IDefaultCase<R | void> {
+function DefaultCase<R>(): IDefaultCase<void>;
+function DefaultCase<R>(fn: () => R): IDefaultCase<R>;
+function DefaultCase<R>(val: R): IDefaultCase<R>;
+function DefaultCase<R>(val?: any): IDefaultCase<R | void> {
+    if (!val) {
+        return {
+            fn: (() => {})
+        };
+    }
+    if (typeof val === 'function') {
+        return {
+            fn: val
+        };
+    }
+
     return {
-        value
+        fn: (() => val)
     };
 }
 
@@ -39,7 +50,7 @@ function match<T, R>(input: T, defaultCase: IDefaultCase<R>, ...cases: ICase<T, 
             return k.fn(input);
         }
     }
-    return defaultCase.value;
+    return defaultCase.fn();
 }
 
 export {Predicate, Function, Type, ICase, Case, IDefaultCase, DefaultCase, match}
