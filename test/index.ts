@@ -1,5 +1,6 @@
+/* tslint:disable:no-shadowed-variable no-empty max-line-length */
 import * as test from 'tape';
-import {match, Case as when, DefaultCase as _} from '../lib';
+import {Case as when, DefaultCase as _, match} from '../lib';
 
 test(`Matching numbers with a single failing match returns the default case value`, (t) => {
     t.plan(1);
@@ -64,7 +65,7 @@ test(`Matching strings with a single failing match uses the result of a default 
 class A { constructor(public readonly a: number, public readonly name: string) { /* empty */ } }
 class B { constructor(public readonly b: number, public readonly name: string) { /* empty */ } }
 class C { constructor(public readonly c: number, public readonly name: string) { /* empty */ } }
-type Foo = A | B | C
+type Foo = A | B | C;
 
 test(`Matching types with a single failing match returns the default case value`, (t) => {
     t.plan(1);
