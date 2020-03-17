@@ -23,7 +23,6 @@
     "@types/tape": "^4.2.28",
     "tap-list": "^1.0.1",
     "tape": "^4.6.3",
-    "tslint": "^5.8.0",
     "typescript": "^3.8.3"
   }
 }
