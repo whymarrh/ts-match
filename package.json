@@ -24,5 +24,8 @@
     "tap-list": "^1.0.1",
     "tape": "^4.6.3",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5"
   }
 }
