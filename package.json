@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --pretty --project .",
-    "test": "npm run build && tape test/*.js | tap-list"
+    "test": "yarn build && tape test/*.js | tap-list"
   },
   "repository": {
     "type": "git",
