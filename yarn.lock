@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.50.tgz#dc545448e128c88c4eec7cd64025fcc3b7604541"
   integrity sha512-N9OVsMBspboNvYaLAQnLEhb2eQ96lavogMR5LoH5k8nb1PvBZHSBFhzhsq2LNzGTBBOtBviOc1GiSu+wlM/pGw==
 
+"@types/node@^12.12.30":
+  version "12.12.30"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.30.tgz#3501e6f09b954de9c404671cefdbcc5d9d7c45f6"
+  integrity sha512-sz9MF/zk6qVr3pAnM0BSQvYIBK44tS75QC5N+VbWSE4DjCV/pJ+UzCW/F+vVnl7TkOPcuwQureKNtSSwjBTaMg==
+
 "@types/tape@^4.2.28":
   version "4.2.31"
   resolved "https://registry.yarnpkg.com/@types/tape/-/tape-4.2.31.tgz#d2cd0f2e410d2c288a5eb54c01c04e6b8a301fd2"
@@ -507,10 +512,10 @@ tsutils@^2.12.1:
   dependencies:
     tslib "^1.7.1"
 
-typescript@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.1.tgz#ef39cdea27abac0b500242d6726ab90e0c846631"
-  integrity sha1-7znN6ierrAtQAkLWcmq5DgyEZjE=
+typescript@^3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+  integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
 util-deprecate@~1.0.1:
   version "1.0.2"

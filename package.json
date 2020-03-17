@@ -19,10 +19,11 @@
   },
   "homepage": "https://github.com/whymarrh/ts-match#readme",
   "devDependencies": {
+    "@types/node": "^12.12.30",
     "@types/tape": "^4.2.28",
     "tap-list": "^1.0.1",
     "tape": "^4.6.3",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
+    "typescript": "^3.8.3"
   }
 }
