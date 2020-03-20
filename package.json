@@ -4,6 +4,10 @@
   "description": "A small matching library for TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/index.js",
+    "lib/index.d.ts"
+  ],
   "scripts": {
     "build": "tsc --pretty --project .",
     "lint": "eslint --ext ts .",
