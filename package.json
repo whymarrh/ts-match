@@ -6,6 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --pretty --project .",
+    "lint": "eslint --ext ts .",
     "test": "yarn build && tape test/*.js | tap-list"
   },
   "repository": {
@@ -19,8 +20,13 @@
   },
   "homepage": "https://github.com/whymarrh/ts-match#readme",
   "devDependencies": {
+    "@metamask/eslint-config": "^2.1.0",
     "@types/node": "^12.12.30",
     "@types/tape": "^4.2.28",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
     "tap-list": "^1.0.1",
     "tape": "^4.6.3",
     "typescript": "^3.8.3"
