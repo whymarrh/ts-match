@@ -18,3 +18,11 @@ const result = match<Foo, number>(s,
     when(C, s => s.c),
 );
 ```
+
+## Quick start
+
+Install via:
+
+```
+$ yarn add ts-match
+```
