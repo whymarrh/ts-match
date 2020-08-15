@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/whymarrh/ts-match#readme",
   "devDependencies": {
-    "@metamask/eslint-config": "^2.1.0",
+    "@metamask/eslint-config": "^3.0.0",
     "@types/node": "^12.12.30",
     "@types/tape": "^4.2.28",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
