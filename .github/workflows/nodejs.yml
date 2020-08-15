@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     name: Build & test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         node-version: [12.x]
@@ -13,11 +13,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn
-    - run: yarn build
-    - run: yarn lint
-      env:
-        CI: true
-    - run: yarn test
-      env:
-        CI: true
+    - run: |
+        yarn
+        yarn build
+        yarn lint
+        yarn test
