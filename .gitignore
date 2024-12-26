@@ -1,6 +1,5 @@
 *.tgz
 *.js
 *.d.ts
-package-lock.json
 npm-debug.log
 node_modules/
